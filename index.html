@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>To-Do List Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Daily To-Do List</h1>
+        <div id="addTaskForm">
+            <input type="text" id="newTaskInput" placeholder="Add New Task" onkeydown="if(event.keyCode == 13) addTask()">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList">
+            <!-- Lists of tasks -->
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+        <div id="clearTasksForm">
+            <button onclick="clearAllTasks()">Clear All Tasks</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
